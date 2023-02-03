@@ -8,7 +8,7 @@ import { userRouter } from './file/user.js'
 
 dotenv.config()
 const app = express()     
-const port = process.env.port
+const port = process.env.port 
 // const movies = [
 //     {
 //      "id": "1",
@@ -84,17 +84,17 @@ const port = process.env.port
 //     }
 //    ]   
 
-console.log(process.env.mongo_url)
+console.log(process.env.mongo_url) 
    const mongo_url = process.env.mongo_url
 
-
+ 
 async function createConnection(){
     const client = new MongoClient(mongo_url)
-    await client.connect()
+    await client.connect() 
     console.log("mongo is connected")
     return client;
 }
- export const client = await createConnection();
+ export const client = await createConnection(); 
  app.use(express.json())
 
  app.get("/", (req,res)=>{
