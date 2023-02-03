@@ -22,6 +22,19 @@ const router = express.Router()
 //     const hasedPassword = await getPassword(password)
 //     const creat = await creatUser(userName,hasedPassword )
 
+router.get("/", async(req, res)=>{
+  
+  
+const user = await user(req)
+
+  res.send(user)
+
+
+  // res.send(movies.filter((mk)=> mk.language == language));
+  // const moviee = movies.find((mk)=> mk.language == language)
+  // res.send(moviee)
+})
+
 router.post("/login", async(req, res)=>{
     const {userName, password} = req.body
     console.log(userName, password)
