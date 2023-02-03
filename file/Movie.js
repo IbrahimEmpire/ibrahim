@@ -5,7 +5,7 @@ import {auth} from '../backup/midleware/auth.js'
 const router = express.Router()
 router.get("/", async(req, res)=>{
   
-    const { language, rating } = req.query;
+    const { language, rating } = req.query;  
     // let filteredMovies = movies
     // if (language){
     //     filteredMovies = filteredMovies.filter((mk)=> mk.language == language)

@@ -6,7 +6,7 @@ export async function Movie(req) {
 }
 export async function GetById(id) {
     return await client.db("mickey").collection("movies").findOne({ id: id });
-}
+}  
 export async function Post(newbook) {
     return await client.db("mickey")
         .collection("movies").insertMany(newbook);
