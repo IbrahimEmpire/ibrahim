@@ -14,10 +14,9 @@
   "start": "node new.js",
  
    
-  "dev": "nodemon new.js",
+  "dev": "nodemon new.js"
  
    
-  "test": "echo \"Error: no test specified\" && exit 1"
  
   },
  
